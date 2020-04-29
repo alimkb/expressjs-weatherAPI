@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/favicon.ico">
+    <title>{{pageTitle}}</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+{{>header}}
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1 class="mt-5">The World Weather</h1>
+      <p class="lead">Browse for your current weather location</p>
+            <div class="bd-example">
+                <form id="weatherForm">
+                    <div class="form-group w-50">
+                        <label for="cityname">City Name:</label>
+                        <input type="text" class="form-control" id="cityname" placeholder="Search for a city " />
+                    </div> 
+                    <button type="submit" class="btn btn-lg btn-primary">Search</button>
+                </form>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <p id="address"></p>
+                <p id="main"></p>
+                <p id="description"></p>
+                <p id="temp"></p>
+                <p id="minTemp"></p>
+                <p id="maxTemp"></p>
+                <p id="feelsLike"></p>
+                <p id="humidity"></p>
+            </div>
+
+    </main>
+
+{{>footer}}
+    <script src="/js/postRequest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+

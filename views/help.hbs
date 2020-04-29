@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/favicon.ico">
+    <title>{{pageTitle}}</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    {{>header}}
+
+    <main role="main" class="container">
+
+        <h3 class="mt-5">Help</h3>
+        <p>By this sample weather app you can see how to make call mapbox API to recieve the latitude and longitude of the city and send to the Openweathermap API and display the current weather information of the city.
+         All the code for this weather app project can be found in <a href="#">Github</a></p>
+        
+   
+    </main>
+    
+    {{>footer}}
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/getrequest.js"></script>
+    <script src="/js/postrequest.js"></script>
+  </body>
+</html>
