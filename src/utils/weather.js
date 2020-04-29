@@ -1,4 +1,3 @@
-////weather api call
 const request =require('request');
 
 

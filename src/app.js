@@ -1,6 +1,6 @@
 const geocode = require('./utils/geocode')
 const getWeather = require('./utils/weather')
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 3000;
 var express = require("express");
 const hbs = require('hbs')
 const path = require('path')
@@ -83,8 +83,8 @@ app.post("/api/customers/save", function (req, res) {
                       output.description = weatherResults.description;
                       output.humidity = weatherResults.humidity;
                       output.addname = add;
-                        outputs.push(output);
-                        //console.log(output);
+                      outputs.push(output);
+                    
                       return res.status(200).send(output);
                   }
               });
